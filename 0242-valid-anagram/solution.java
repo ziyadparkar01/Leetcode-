@@ -1,0 +1,19 @@
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        char[] a= new char[s.length()];
+        char [] b=new char[t.length()];
+  
+    
+       for(int i=0;i<s.length();i++)
+       {
+        a[i]=s.charAt(i);
+       }
+       for(int i=0;i<t.length();i++)
+       {
+        b[i]=t.charAt(i);
+       }
+       Arrays.sort(a);
+       Arrays.sort(b);
+       return Arrays.equals(a,b);  
+    }
+}
