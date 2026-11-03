@@ -12,4 +12,3 @@ class Solution {
         return sum-min*nums.length;
    }
  }
-
