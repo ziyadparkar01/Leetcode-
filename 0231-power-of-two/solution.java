@@ -1,18 +1,15 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        long term = 1;
-        boolean t = false;
+        if (n==1073741824)
+        return true;
+       for(int i=1;i<=1000000000;i=i*2)
+       {
+        if(n==i)
+        return true;
 
-        for(int i = 0; i <= 31; i++) {
-            
-            if(term == n) {
-                t = true;
-            }
-
-            term = term * 2;
-        }
-
-        return t;
+       }
+       return false;
     }
+
 }
 
